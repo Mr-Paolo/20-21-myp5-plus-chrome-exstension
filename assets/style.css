@@ -1,0 +1,17 @@
+body{
+    /* background: url('https://source.unsplash.com/random');
+    background-size:cover */
+}
+
+.icon{
+    animation: rotation 2s infinite
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
