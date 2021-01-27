@@ -8,6 +8,7 @@
       "persistent": false
     },
     "page_action": {
+      "browser_style": "true",
       "default_popup": "popup.html",
       "default_icon": {
         "16": "images/get_started16.png",

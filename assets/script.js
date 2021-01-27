@@ -1,9 +1,22 @@
-$('h1.type--h2').html('NEW TITLE!')
+const select = `
+<div class="">
+    <select>
+        <option value="">Select your search</option>
+        <option>Users</option>
+        <option>Channels</option>
+    </select>
+</div>`
 
-$('h1.type--h2').after('<button class="btn-under-title"> Click me</button>')
+$('#SearchDropdown').prepend(select)
 
-const button = $('.btn-under-title')
-button.click(() => {
-    alert("button clicked")
-})
+$(document).on('change', 'select', function() {
+    const selectOption = $(this).val()
+    if (selectOption == "Users"){
+        $('input').val('u/')
+    }
 
+    if (selectOption == "Channels"){
+        $('input').val('r/')
+    }
+    
+});
